@@ -1,10 +1,22 @@
-
-import './App.css';
+import "./App.css";
+import Graph from "./components/Graph";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div className="App">
-      <h1>expense tracker</h1>
+      <div className="container mx-auto max-w-6xl text-center drop-shadow-lg text-grey-800">
+        <h1 className="text-4xl py-8 mb-10 bg-slate-800 text-white rounded">EXPENSE TRACKER</h1>
+      
+        {/* grid coloumns */}
+        <div className="grid md:grid-cols-2 gap-4">
+          {/* charts */}
+          <Graph></Graph>
+          {/* forms */}
+          <Form></Form>
+        </div>
+      
+      </div>
     </div>
   );
 }
